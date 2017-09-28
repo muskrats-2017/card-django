@@ -1,0 +1,65 @@
+<!doctype HTML>
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="main.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	</head>
+	<body>
+		<script type="x/temp" id="box-template">
+			<div class="card">
+    			<span class="card-title">
+    			</span>
+    			<button class="card-close">
+      			X
+    			</button>
+    			<button class="card-edit">
+    			Edit
+    			</button>
+    			<p class="card-body">
+    			</p>
+  			</div>
+  		</script>
+	  	<main class="main">
+			<div class="cardclass card-add">
+				<form id="cardForm" action="#" method="post">
+				    <span class="card-title">
+				    	<input type="text" name="name" placeholder="Title"/>
+				    </span>
+				    <p class="card-body">
+				    	<textarea name="body" rows="7"></textarea>
+				    </p>
+
+				    {% csrf_token %}
+
+				    <select name="color">
+				    	<option color="red">Red</option>
+				    	<option color="blue">Blue</option>
+				    	<option color="green">Green</option>
+				    </select>
+				    <input type="submit" value="Add" id="addCard" />
+
+
+			    </form>
+			  	<div class="container" id="printout">
+					<div class="table" >
+					    <div class="left drag-area">
+					        It's your birthday!
+					    </div>
+					    
+					    <div class="right drag-area">   
+					    	Ur a turd
+					    </div>        
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+
+</html>

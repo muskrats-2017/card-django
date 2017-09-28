@@ -1,0 +1,90 @@
+body{
+	background-color: #D1D1D1
+}
+
+nav{
+	position: absolute;
+	background-color: black;
+	width: 100%;
+	height: 4em;
+	top: 0;
+	text-align: center;
+	line-height: 4em;
+}
+
+nav h1{
+	font-size: 3em;
+	font-family: monospace;
+	color: white;
+}
+
+#todoform{
+	margin: 5em auto 0 auto;
+	width: 20%;
+}
+
+#printout{
+	width: 500px;
+	min-height: 1000px;
+	background-color: white;
+	margin: 1em auto 0 auto;
+	color: black;
+	text-indent: 1em;
+}
+
+.card {
+  height: 200px;
+  width: 200px;
+  margin-right: 1em;
+  margin-top: 1em;
+  padding: .5em;
+}
+
+.card-add {
+  background-color: black;
+}
+
+.card button.close {
+  float: right;
+}
+
+.table { 
+	border: 1px solid black; 
+	padding: 10px; 
+	width: 600px; 
+	overflow: hidden;
+
+}
+
+.left { 
+	float: left;
+	width: 300px;
+	
+	display: inline-block;
+	position: relative; 
+}
+
+.right { 
+
+	float: right; 
+	width: 300px;
+	
+	display: inline-block;
+	position: relative;  
+}
+
+.container {
+    width:800px;
+    height:400px;
+	background: linear-gradient(to right, 
+	                              transparent 0%, 
+	                              transparent calc(50% - 3.81px), 
+	                              black calc(50% - 3.8px), 
+	                              black calc(50% + 3.8px), 
+	                              transparent calc(50% + 3.81px), 
+	                              transparent 100%); 
+	}
+
+.drag-area {
+	width: 200px;
+}
